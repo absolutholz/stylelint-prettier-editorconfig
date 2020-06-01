@@ -1,0 +1,15 @@
+@mixin test {
+	color: royalblue;
+}
+
+:root {
+	background: firebrick;
+}
+
+body {
+	&::before {
+		background: #fff;
+		content: "";
+	}
+	@include test;
+}

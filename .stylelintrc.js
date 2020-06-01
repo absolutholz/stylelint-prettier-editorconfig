@@ -9,6 +9,7 @@ module.exports = {
 	],
 
 	plugins: [
+		"stylelint-scss",
 		"stylelint-order",
 	],
 
@@ -18,5 +19,7 @@ module.exports = {
 			"declarations",
 		],
 		"order/properties-alphabetical-order": true,
+		'at-rule-no-unknown': null,
+		'scss/at-rule-no-unknown': true,
 	},
 };
