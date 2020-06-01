@@ -1,0 +1,8 @@
+:root {
+	background: firebrick;
+}
+
+body::before {
+	background: #fff;
+	content: "";
+}

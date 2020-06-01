@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  front-end:
+    container_name: test-setup
+    build:
+      context: .
+      dockerfile: ./docker-config/front-end/Dockerfile
+    working_dir: /var/www/front-end
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./:/var/www/front-end
+      - "npm_cache:/var/www/front-end/node_modules"
+    command: bash -c "tail -f /dev/null"
+
+volumes:
+  npm_cache:

@@ -1,0 +1,25 @@
+{
+    "name": "stylelint-prettier-editorconfig",
+    "version": "1.0.0",
+    "description": "A simple setup to test stylelint, prettier and editorconfig configuration",
+    "main": ".stylelintrc.js",
+    "devDependencies": {
+        "prettier": "^2.0.5",
+        "stylelint": "^13.5.0",
+        "stylelint-config-prettier": "^8.0.1",
+        "stylelint-config-standard": "^20.0.0",
+        "stylelint-order": "^4.0.0",
+        "stylelint-prettier": "^1.1.2"
+    },
+    "scripts": {
+        "stylelint": "stylelint \"**/*.css\" --fix",
+        "stylelint-check": "stylelint-config-prettier-check"
+    },
+    "keywords": [
+        "stylelint",
+        "prettier",
+        "editorconfig"
+    ],
+    "author": "absolutholz",
+    "license": "GPL-3.0-or-later"
+}
